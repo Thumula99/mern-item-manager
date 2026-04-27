@@ -2,6 +2,7 @@ import { useState } from 'react';
 import ItemForm from './components/ItemForm';
 import ItemList from './components/ItemList';
 import './App.css';
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5001';
 
 function App() {
   const [refreshTrigger, setRefreshTrigger] = useState(0);
